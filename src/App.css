@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
+@media screen and (max-width: 400px) {
+  #features {
+    padding: 20px;
+    width: 111%;
+  }
+  #about,
+  #services,
+  #testimonials,
+  #team,
+  #contact,
+  #footer {
+    width: 111%;
+  }
+
+  #portfolio {
+    width: 110%;
+  }
+}
+
+.section-title{
+  margin-top: 7rem;
+}
+
+.feature{
+  height:50rem; 
+}
+.project-title{
+  left:-28%;
+  right:40%;
+}
+.main-title{
+  display: flex;
+  /* position: relative; */
+}
+
+.logo-img{
+  height: 5rem;
+  /* margin-bottom: 5rem; */
+
+  width:4rem;
+  /* position: absolute; */
+}
+
+.project-title{
+  left: -29%;
+  top: -17rem;
+  position: relative;
+}
+
+.project-title h1 span{
+  color:white;
+  font-family: 'Gluten';
+}
+.project-title h1 #one{
+  position: absolute;
+  left: 84px;
+}
+.project-title h1 #two{
+  position: absolute;
+  left: 84px;
+}
+
+.project-title #three{
+  font-family: 'Caveat', cursive;
+  font-size: x-large;
+  font-weight: 300;
+  right: 6px;
+  margin-left: 31px;
+  text-align: left;
+}
+.serv{
+  margin:6rem;
+}
+.chatbox{
+  top: 45%;
+  position: absolute;
+  height: 80vh;
+  right: -73%;
+  width: 300px;
+  color: blue;
+  border-radius: 5.3rem;
+  border-left-color: 39A2DB;
+  border-right-color: 39A2DB;
+
+}
+  
+.project-title p{
+  position: absolute;
+  top: 83%;
+  left: 7%;
+}
+.name{
+  height:50px;
+  /* background-color:#39A2DB; */
+  width:140px;
+  top: 20px;
+  position: absolute;
+}
+
+.maintitle{
+  position:relative;
+  display: flex;
+}
+/* #main{
+  left: 19%;
+  position: absolute;
+} */
