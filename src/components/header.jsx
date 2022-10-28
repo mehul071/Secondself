@@ -12,7 +12,7 @@ export const Header = (props) => {
                 <p id="three">The Second Self’s is an AI based model which is designed not only for
 entertainment/recommendation purpose but also act as a mood lifter.</p> 
                 <a
-                  href=''
+                  href='/moodreco'
                   className='btn btn-custom btn-lg page-scroll '
                 >
                   Start Chatting

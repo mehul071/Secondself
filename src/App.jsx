@@ -1,36 +1,46 @@
-import { useState, useEffect } from "react";
-import { Navigation } from "./components/navigation";
-import { Header } from "./components/header";
-import { Features } from "./components/features";
-import { About } from "./components/about";
-import { Services } from "./components/services";
-import { Contact } from "./components/contact";
-import JsonData from "./data/data.json";
+import { AuthProvider } from "./auth";
+import {Home} from "./Home"
+import { Login } from "./Login"
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
+import { Navigation } from "./components/navigation";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Navigate
+  
+} from "react-router-dom";
+import Camera from "./components/Camera";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
   speedAsDuration: true,
 });
 
-const App = () => {
-  const [landingPageData, setLandingPageData] = useState({});
-  useEffect(() => {
-    setLandingPageData(JsonData);
-  }, []);
 
+const App = () => {
   return (
     <div>
+      <AuthProvider>
+      <BrowserRouter>
       <Navigation />
-      <Header data={landingPageData.Header} />
-      <Features data={landingPageData.Features} />
-      <Services data={landingPageData.Services} />
-      <About data={landingPageData.About} />
-
-      <Contact data={landingPageData.Contact} />
+        <Routes>
+          <Route path="/"  element={<Navigate to="/login" replace/> }/>
+            <Route path="/login" element={<Login/>}/>
+          <Route path="/home" element={<Home/>}/>
+          <Route path="/moodreco" element={<Camera/>}/>
+          </Routes>      
+        </BrowserRouter>
+        </AuthProvider>
     </div>
   );
 };
 
 export default App;
+
+// client id
+// 871906509606-fpervph8512sk23ork06ds3hfkjb3csu.apps.googleusercontent.com
+
+// client server id 
+// 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

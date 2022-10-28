@@ -9,16 +9,16 @@ export const Navigation = (props) => {
             data-toggle='collapse'
             data-target='#bs-example-navbar-collapse-1'
           >
-            {' '}
-            <span className='sr-only'>Toggle navigation</span>{' '}
-            <span className='icon-bar'></span>{' '}
-            <span className='icon-bar'></span>{' '}
-            <span className='icon-bar'></span>{' '}
+            
+            <span className='sr-only'>Toggle navigation</span>
+            <span className='icon-bar'></span> 
+            <span className='icon-bar'></span>
+            <span className='icon-bar'></span>
           </button>
           <a className='navbar-brand page-scroll main-title' href='#page-top'>
           <img src="https://pbs.twimg.com/media/E_5iHkOVkAIpE6f?format=jpg&name=small" alt="" className="name" />
-            {/* <p id="main">Second Self</p> */}
-          </a>{' '}
+          
+          </a>
         </div>
 
         <div
@@ -41,21 +41,6 @@ export const Navigation = (props) => {
                 Services
               </a>
             </li>
-            {/* <li>
-              <a href='#portfolio' className='page-scroll'>
-                Gallery
-              </a>
-            </li>
-            <li>
-              <a href='#testimonials' className='page-scroll'>
-                Testimonials
-              </a>
-            </li>
-            <li>
-              <a href='#team' className='page-scroll'>
-                Team
-              </a>
-            </li> */}
             <li>
               <a href='#contact' className='page-scroll'>
                 Contact
