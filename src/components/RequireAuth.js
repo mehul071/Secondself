@@ -9,7 +9,7 @@ function RequireAuth({children}) {
         return <Navigate to="/login"/>
     }
   return (
-    <div>RequireAuth</div>
+    children
   )
 }
 

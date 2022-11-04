@@ -22,6 +22,7 @@ export const Camera = () =>{
       <button
         onClick={() => {
           const imageSrc = getScreenshot()
+          console.log(imageSrc);
         }}
       >
         Capture photo

@@ -8,12 +8,15 @@ import JsonData from "./data/data.json";
 import { Services } from "./components/services";
 import { Contact } from "./components/contact";
 
+
 export const Home =()=> {
     
   const [landingPageData, setLandingPageData] = useState({});
     useEffect(()=>{
         setLandingPageData(JsonData);
     },[])
+
+ 
   return (
     <div>
       
